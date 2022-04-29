@@ -16,5 +16,16 @@ namespace EDnevnik
         {
             InitializeComponent();
         }
+
+        private void Glavna_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void osobeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Osoba formOsoba = new Osoba();
+
+            formOsoba.Show();
+        }
     }
 }

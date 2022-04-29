@@ -36,11 +36,13 @@ namespace EDnevnik
             this.tabelaSaFKToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.izvestajiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.osobeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblUser = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jedanBezToolStripMenuItem,
             this.jedanSaFKToolStripMenuItem,
@@ -49,7 +51,7 @@ namespace EDnevnik
             this.izvestajiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -58,49 +60,61 @@ namespace EDnevnik
             this.jedanBezToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.osobeToolStripMenuItem});
             this.jedanBezToolStripMenuItem.Name = "jedanBezToolStripMenuItem";
-            this.jedanBezToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.jedanBezToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
             this.jedanBezToolStripMenuItem.Text = "Jedan Bez";
             // 
             // jedanSaFKToolStripMenuItem
             // 
             this.jedanSaFKToolStripMenuItem.Name = "jedanSaFKToolStripMenuItem";
-            this.jedanSaFKToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.jedanSaFKToolStripMenuItem.Size = new System.Drawing.Size(113, 24);
             this.jedanSaFKToolStripMenuItem.Text = "Jedan Sa FK";
             // 
             // tabelaBezToolStripMenuItem
             // 
             this.tabelaBezToolStripMenuItem.Name = "tabelaBezToolStripMenuItem";
-            this.tabelaBezToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.tabelaBezToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
             this.tabelaBezToolStripMenuItem.Text = "Tabela Bez";
             // 
             // tabelaSaFKToolStripMenuItem
             // 
             this.tabelaSaFKToolStripMenuItem.Name = "tabelaSaFKToolStripMenuItem";
-            this.tabelaSaFKToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.tabelaSaFKToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.tabelaSaFKToolStripMenuItem.Text = "Tabela Sa FK";
             // 
             // izvestajiToolStripMenuItem
             // 
             this.izvestajiToolStripMenuItem.Name = "izvestajiToolStripMenuItem";
-            this.izvestajiToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.izvestajiToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
             this.izvestajiToolStripMenuItem.Text = "Izvestaji";
             // 
             // osobeToolStripMenuItem
             // 
             this.osobeToolStripMenuItem.Name = "osobeToolStripMenuItem";
-            this.osobeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.osobeToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.osobeToolStripMenuItem.Text = "Osobe";
             this.osobeToolStripMenuItem.Click += new System.EventHandler(this.osobeToolStripMenuItem_Click);
+            // 
+            // lblUser
+            // 
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Location = new System.Drawing.Point(579, 4);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(0, 20);
+            this.lblUser.TabIndex = 1;
+            this.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Glavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 242);
+            this.Controls.Add(this.lblUser);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Glavna";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Glavna_FormClosed);
             this.Load += new System.EventHandler(this.Glavna_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -118,6 +132,7 @@ namespace EDnevnik
         private System.Windows.Forms.ToolStripMenuItem tabelaBezToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tabelaSaFKToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem izvestajiToolStripMenuItem;
+        private System.Windows.Forms.Label lblUser;
     }
 }
 

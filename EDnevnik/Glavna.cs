@@ -19,6 +19,7 @@ namespace EDnevnik
 
         private void Glavna_Load(object sender, EventArgs e)
         {
+            lblUser.Text = string.Format("{0} {1}", Program.Ime, Program.Prezime);
         }
 
         private void osobeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -26,6 +27,11 @@ namespace EDnevnik
             Osoba formOsoba = new Osoba();
 
             formOsoba.Show();
+        }
+
+        private void Glavna_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

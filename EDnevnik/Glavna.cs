@@ -33,5 +33,25 @@ namespace EDnevnik
         {
             Application.Exit();
         }
+
+        private void smerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Sifarnik("smer").Show();
+        }
+
+        private void skolskeGodineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Sifarnik("skolska_godina").Show();
+        }
+
+        private void predmetiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Sifarnik("predmet").Show();
+        }
+
+        private void osobeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new Sifarnik("osoba").Show();
+        }
     }
 }

@@ -53,5 +53,10 @@ namespace EDnevnik
         {
             new Sifarnik("osoba").Show();
         }
+
+        private void raspodelaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Raspodela().Show();
+        }
     }
 }

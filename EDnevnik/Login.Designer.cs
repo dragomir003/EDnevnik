@@ -58,6 +58,7 @@ namespace EDnevnik
             // 
             // tbEmail
             // 
+            this.tbEmail.AcceptsReturn = true;
             this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tbEmail.Location = new System.Drawing.Point(200, 51);
             this.tbEmail.Name = "tbEmail";
@@ -66,11 +67,13 @@ namespace EDnevnik
             // 
             // tbLozinka
             // 
+            this.tbLozinka.AcceptsReturn = true;
             this.tbLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.tbLozinka.Location = new System.Drawing.Point(200, 97);
             this.tbLozinka.Name = "tbLozinka";
             this.tbLozinka.Size = new System.Drawing.Size(164, 26);
             this.tbLozinka.TabIndex = 3;
+            this.tbLozinka.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 

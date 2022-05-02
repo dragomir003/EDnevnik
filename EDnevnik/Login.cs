@@ -67,7 +67,7 @@ namespace EDnevnik
             Program.Prezime = osoba.Rows[0]["prezime"].ToString();
 
             Hide();
-            new Glavna().Show();
+            new Glavna2().Show();
         }
     }
 }

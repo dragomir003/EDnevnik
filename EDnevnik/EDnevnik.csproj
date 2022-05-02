@@ -53,6 +53,12 @@
     <Compile Include="Glavna.Designer.cs">
       <DependentUpon>Glavna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Glavna2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Glavna2.Designer.cs">
+      <DependentUpon>Glavna2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </Compile>
     <EmbeddedResource Include="Glavna.resx">
       <DependentUpon>Glavna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Glavna2.resx">
+      <DependentUpon>Glavna2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -42,7 +42,10 @@ namespace EDnevnik
         {
             var menjano = tabela.GetChanges();
             if (menjano == null)
+            {
                 Close();
+                return;
+            }
 
             adapter.UpdateCommand = new SqlCommandBuilder(adapter)
                 .GetUpdateCommand();

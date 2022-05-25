@@ -21,7 +21,7 @@ namespace EDnevnik
 
         private void oceneToolStripMenuItem_Click(object sender, EventArgs e) => MessageBox.Show("Nema jos");
 
-        private void upisniceToolStripMenuItem_Click(object sender, EventArgs e) => MessageBox.Show("Nema jos");
+        private void upisniceToolStripMenuItem_Click(object sender, EventArgs e) => new Upisnica().Show();
 
         private void osobeToolStripMenuItem_Click(object sender, EventArgs e) => new Osoba().Show();
 
